@@ -12,14 +12,14 @@ time.sleep(10)
 
 chat=True
 
-ele1=driver.find_element_by_xpath('//*[@title="New chat"]')
-ele1.click()
+newChat=driver.find_element_by_xpath('//*[@title="New chat"]')
+newChat.click()
 
 contactS= driver.find_element_by_xpath('//input[@title="Search contacts"]')
 contactS.click()
-contactS.send_keys("FriendsName")
+contactS.send_keys("Jill")
 
-contactName=driver.find_element_by_xpath('//*[@title="FriendsName"]').click()
+contactName=driver.find_element_by_xpath('//*[@title="Jill"]').click()
 spam=driver.find_element_by_xpath('//div[@contenteditable="true"]')
 
 while(chat):
